@@ -1,0 +1,31 @@
+apply plugin: 'axelor-app'
+
+application {
+
+	name "axelor-school-test"
+	title "Axelor school test"
+
+	version "1.0.0"
+
+	// ADK version required
+	adkVersion "~3.0.19"
+
+	// module dependencies
+	// module "modules:axelor-contact"
+	module "modules:academic"
+	module "modules:secretary"
+	module "modules:finance"
+}
+
+allprojects {
+	license {
+		ext.product = "axelor-school-test"
+		ext.owner = "My Company"
+		ext.website = "http://my-company.com"
+	}
+}
+
+tomcat {
+	httpPort = project.properties.get("http.port", 8080) as Integer
+	stopPort = 9451
+}

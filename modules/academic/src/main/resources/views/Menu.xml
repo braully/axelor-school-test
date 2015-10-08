@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<object-views xmlns="http://axelor.com/xml/ns/object-views"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://axelor.com/xml/ns/object-views http://axelor.com/xml/ns/object-views/object-views_3.0.xsd">
+
+	<menuitem name="menu-course" priority="100" title="Course"
+		icon="img/tree-folder.png" />
+
+	<menuitem name="menu-course-all" parent="menu-course" title="Course"
+		action="course.all" />
+
+	<action-view name="course.all" title="Course"
+		model="com.axelor.academic.db.Course">
+		<view type="grid" name="course-grid" />
+		<view type="form" name="course-form" />
+	</action-view>
+</object-views>
