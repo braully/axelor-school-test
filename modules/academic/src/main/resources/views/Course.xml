@@ -12,12 +12,9 @@
 	<form name="course-form" title="Course" model="com.axelor.academic.db.Course">
 		<panel title="Overview">
 			<field name="name" x-span="12" />
+			<field name="description" x-span="12" />
 			<field name="code" />
-			<field name="description" />
 			<field name="tags" />
-		</panel>
-		<panel title="Course">
-			<field name="name" showTitle="false" x-span="12" />
 		</panel>
 		<panel sidebar="true">
 			<field name="createdOn" />
