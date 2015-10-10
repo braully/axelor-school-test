@@ -10,6 +10,5 @@
 		<many-to-one name="section" ref="Section" required="true" />
 		<string name="name" required="true" unique="true" namecolumn="true" />
 		<string name="code" />
-
 	</entity>
 </domain-models>

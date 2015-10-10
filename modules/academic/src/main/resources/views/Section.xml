@@ -3,16 +3,15 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://axelor.com/xml/ns/object-views http://axelor.com/xml/ns/object-views/object-views_3.0.xsd">
 
-	<grid name="period-grid" title="Periods" model="com.axelor.academic.db.Period">
+	<grid name="section-grid" title="Sections" model="com.axelor.academic.db.Section">
 		<field name="name" />
 		<field name="code" />
 	</grid>
 
-	<form name="period-form" title="Period" model="com.axelor.academic.db.Period">
+	<form name="section-form" title="Section" model="com.axelor.academic.db.Section">
 		<panel title="Overview">
 			<field name="name" x-span="12" />
 			<field name="code" />
-			<field name="statusSelect" />
 		</panel>
 		<panel sidebar="true">
 			<field name="createdOn" />

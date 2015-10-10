@@ -8,10 +8,25 @@
 
 	<menuitem name="menu-course-all" parent="menu-course" title="Course"
 		action="course.all" />
-
 	<action-view name="course.all" title="Course"
 		model="com.axelor.academic.db.Course">
 		<view type="grid" name="course-grid" />
 		<view type="form" name="course-form" />
+	</action-view>
+
+	<menuitem name="menu-section-all" parent="menu-course" title="Section"
+		action="section.all" />
+	<action-view name="section.all" title="Section"
+		model="com.axelor.academic.db.Section">
+		<view type="grid" name="section-grid" />
+		<view type="form" name="section-form" />
+	</action-view>
+
+	<menuitem name="menu-period-all" parent="menu-course" title="Period"
+		action="period.all" />
+	<action-view name="period.all" title="Period"
+		model="com.axelor.academic.db.Period">
+		<view type="grid" name="period-grid" />
+		<view type="form" name="period-form" />
 	</action-view>
 </object-views>
