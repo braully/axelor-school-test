@@ -5,18 +5,11 @@
 
 	<module name="academic" package="com.axelor.academic.db" />
 
-	<entity name="Period" cachable="true">
+	<entity name="Class" cachable="true">
+		<many-to-one name="period" ref="Period" required="true" />
+		<many-to-one name="section" ref="Section" required="true" />
 		<string name="name" required="true" unique="true" namecolumn="true" />
 		<string name="code" />
-	<!-- <integer name="year" /> -->
-		<integer name="statusSelect" title="Status" readonly="true"
-			selection="academic.period.status.select" default="1" help="true" />
-		<extra-code>
-		<![CDATA[
-		// STATUS SELECT
-		public static final int STATUS_OPENED = 1;
-		public static final int STATUS_CLOSED = 2;	
-		]]>
-	</extra-code>
+
 	</entity>
 </domain-models>
